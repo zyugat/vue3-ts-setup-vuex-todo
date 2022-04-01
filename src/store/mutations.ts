@@ -23,7 +23,6 @@ export default {
     },
   ): void {
     state.list = state.list.map((item: ITodo) => {
-      console.log(todo)
       if (item.id === todo.id) {
         item.content = todo.content
       }
