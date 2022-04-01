@@ -4,6 +4,7 @@
 
 使用vue3-cli+vuex+typescript+setup编写的一个列表操作,增删改
 
+https://zyugat.github.io/vue3-ts-setup-vuex-todo/
 
 
 ![动画](http://img.zyugat.cn/zyuimg/2022-04-01_fe4855e35316f.gif)
