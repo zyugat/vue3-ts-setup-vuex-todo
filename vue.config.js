@@ -5,6 +5,7 @@ function resolve(dir) {
 }
 module.exports = defineConfig({
   transpileDependencies: true,
+  publicPath: "./",
   chainWebpack: config => {
     // 修改文件引入自定义路径
     config.resolve.alias.set('@', resolve('src/'))
