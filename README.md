@@ -8,7 +8,8 @@
 
 ![动画](http://img.zyugat.cn/zyuimg/2022-04-01_fe4855e35316f.gif)
 
-![动画](C:\Users\zyugat\Desktop\动画.gif)
+![动画](https://user-images.githubusercontent.com/59011602/161241818-1aaadedd-ee43-4088-8aae-a8f08a0a9efa.gif)
+
 
 ## 目录结构
 
