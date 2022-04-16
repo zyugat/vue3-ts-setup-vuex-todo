@@ -1,17 +1,23 @@
-<script setup lang="ts">
-import { computed } from 'vue'
-import { Store, useStore } from 'vuex'
-import TodoList from 'components/todo/index.vue'
-
-const store: Store<any> = useStore()
-const todoList = computed(() => store.state.list)
-</script>
-
 <template>
   <div class="app">
     <todo-list :todo-list="todoList" />
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import TodoList from 'components/todo/index.vue'
+
+export default defineComponent({
+  name: 'App',
+  components: { TodoList },
+  computed: {
+    todoList(): [] {
+      return this.$store.state.list
+    },
+  },
+})
+</script>
 
 <style lang="scss">
 .app {
@@ -20,12 +26,15 @@ const todoList = computed(() => store.state.list)
     padding: 0px;
     box-sizing: border-box;
   }
+
   li {
     list-style: none;
   }
+
   a {
     text-decoration: none;
   }
+
   select,
   input,
   label,
